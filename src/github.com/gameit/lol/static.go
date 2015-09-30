@@ -8,7 +8,14 @@ const NEWS_URL            string = "http://na.lolesports.com:80/api/news.json?"
 const TOURNAMENT_URL      string = "http://na.lolesports.com:80/api/tournament.json?published=1,0"
 const TEAM_URL            string = "http://na.lolesports.com:80/api/tournament/258"
 
+    /* ---------------- About Garena region ---------------- */
 
+const REAL_TIME           string = "https://ws.leagueofasia.com:8443/LeagueOfAsia/jaxrs/summoner/realtime?region=%s&summoner_name=%s"
+const SERVER_STATUS       string = "https://ws.leagueofasia.com:8443/LeagueOfAsia/jaxrs/status/servers"
+const SUMMONER_STAT       string = "https://ws.leagueofasia.com:8443/LeagueOfAsia/jaxrs/summoner/stats?region=%s&summoner_name=%s";
+const SUMMONER_NAME       string = "https://ws.leagueofasia.com:8443/LeagueOfAsia/jaxrs/summoner/get_names?region=%s&summoner_ids=%s";
+const VERSION             string = "https://ws.leagueofasia.com:8443/LeagueOfAsia/jaxrs/version/get"
+const MMR                 string = "http://%s:%d/observer-mode/rest/consumer/getGameMetaData/%s/%d/1/token"
 
 
 /*
