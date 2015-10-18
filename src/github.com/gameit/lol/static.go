@@ -5,7 +5,7 @@ package lol
     --------------------------------------------------------------------------------------------------------  */
 const MAX_TOURNAMENT      int = 2
 const NEWS_URL            string = "http://na.lolesports.com:80/api/news.json?"
-const TOURNAMENT_URL      string = "http://na.lolesports.com:80/api/tournament.json?published=1,0"
+const TOURNAMENT_URL      string = "http://2015.na.lolesports.com:80/api/tournament.json?published=1,0"
 const TEAM_URL            string = "http://na.lolesports.com:80/api/tournament/258"
 
     /* ---------------- About Garena region ---------------- */

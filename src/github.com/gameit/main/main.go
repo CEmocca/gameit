@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	"fmt"
+	// "fmt"
 	// "bytes"
 	// "io/ioutil"
 	// "encoding/json"
@@ -16,8 +16,8 @@ import (
 	)
 
 func main() {
-	str := lol.GetTournaments()
-	fmt.Println(str)
+	// str := lol.GetTournaments()
+	// fmt.Println(str)
 
 	m := martini.New()
     route := martini.NewRouter()

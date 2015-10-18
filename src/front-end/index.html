@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html ng-app="mainApp">
+<html>
 <head>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-<title>Dream Web Site : Welcome</title>
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"> -->
+<title>GameIt Web Site</title>
+
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css">
-<!-- <script type='text/javascript' src="bower_components/angular/angular.min.js"></script> -->
+
+<!-- Angular -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type='text/javascript' src="bower_components/angular-route/angular-route.min.js"></script>
+
+<!-- core -->
+<script type="text/javascript" src="app/app.module.js"></script>
+
+<!-- home module -->
+<script type="text/javascript" src="app/home/home.module.js"></script>
+<script type="text/javascript" src="app/home/home.js"></script>
+
+<!-- main module -->
+<script type="text/javascript" src="app/summoner/summoner.module.js"></script>
+<script type="text/javascript" src="app/summoner/summoner.js"></script>
+
 
 </head>
-<body>
-	<header>
+<body ng-app="app">
+	 <header> 
 		<nav>
 	    	<div class="nav-wrapper">
-	      		<a href="#" class="brand-logo">Logo</a>
-	      		<ul id="nav-mobile" class="right hide-on-med-and-down">
-	        		<li><a href="sass.html">Sass</a></li>
-	        		<li><a href="badges.html">Components</a></li>
-	        		<li><a href="collapsible.html">JavaScript</a></li>
-	      		</ul>
+	    		<div class="row">
+		      		<a href="#" class="brand-logo hide-on-med-and-down">Logo</a>
+		      		<div class="input-field col s8 offset-s2 col m3 offset-m4">
+		      			<div class="input-field cyan">
+			      			<input type="search" id="searchSummoner"/>
+			      			<label for="searchSummoner"><i class="material-icons">search</i></label>
+			      			<i class="material-icons">close</i>
+		      			</div>
+		      		</div>
+		      		<ul class="right hide-on-med-and-down">
+		        		<li><a href="/home">Home</a></li>
+		        		<li><a href="/summoner">Summoner</a></li> 
+		      		</ul>
+	      		</div>
 	    	</div>
 	  	</nav>
 	</header>
 	<main>
-		
+		<!-- <div ng-controller="AbcCtrl"> -->
+			<!-- {{message}} -->
+			<div ng-view></div>
+			
+		<!-- </div> -->
 	</main>
 	<footer>
 	</footer>
